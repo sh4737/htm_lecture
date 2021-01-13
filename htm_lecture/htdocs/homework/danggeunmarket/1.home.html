@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>홈</title>
+	</head>
+	<body>
+		<!-- 메인 메뉴 -->
+		<!-- 네비게이션 메뉴는 목록 태그를 사용한다고 함 -->
+		<ul>
+			<li><a href="1.home.html">홈</a>
+			<li><a href="2.nearMe.html">내 근처</a>
+			<li><a href="3.newPost.html">글쓰기</a>
+			<li><a href="4.chat.html">채팅</a>
+			<li><a href="5.mydanggedun.html">나의 당근</a>
+		</ul>
+		<hr>
+		<form>
+			<!-- 동네 선택 -->
+			<!-- 여러 동네를 선택할 수 있어서 multiple속성을 사용 -->
+			<select multiple="multiple">
+				<option>화곡동</option>
+				<option>우장산동</option>
+				<option>발산동</option>
+				<option>마곡동</option>
+				<option>방화동</option>
+			</select>
+			<!-- 검색기 -->
+			<label for="seach">검색</label>
+			<input id="seach" type="text" name="seach">
+			<input type="button" name="seachButton" value="검색">
+		</form>
+		
+		<!-- 중메뉴 -->
+		<!-- 다른 페이지로 넘어가지 않고 한 페이지에 두 탭 모두 넣기위해 제목 앵커 넣음 -->
+		<hr>
+		<a href="#usedTrading">중고거래</a>
+		<a href="#neighborhoodLife">동네생활</a>
+		<hr>
+		
+		<!-- 중고거래 목록 -->
+		<h3 id="usedTrading">중고거래</h3>
+		<ul>
+			<li><a href="postdetail.html"><img src="http://placehold.it/50x50">아이폰X 팝니다
+				<p style="font-size:12px">판매자1 주소</p>
+				<p><b>00,000원</b></p></a>
+			</li>
+			<li><img src="http://placehold.it/50x50">중고노트북 팝니다
+				<p style="font-size:12px">판매자2 주소</p>
+				<p><b>00,000원</b></p>
+			</li>
+			<li><img src="http://placehold.it/50x50">성낙인 헌법학 13판 팝니다
+				<p style="font-size:12px">판매자3 주소</p>
+				<p><b>00,000원</b></p>
+			</li>
+			<li><img src="http://placehold.it/50x50">LP판 세트
+				<p style="font-size:12px">판매자4 주소</p>
+				<p><b>00,000원</b></p>
+			</li>
+			<li><img src="http://placehold.it/50x50">시나공 2020 정보처리기사 필기책 팝니다
+				<p style="font-size:12px">판매자5 주소</p>
+				<p><b>00,000원</b></p>
+			</li>
+		</ul>
+		<hr>
+		
+		<!-- 동네 생활 -->
+		<!-- 인스타, 페북같은 방식 / 어떻게 구현해야할지 잘 모르겠음 -->
+		<h3 id="neighborhoodLife">동네생활</h3>
+		<p><img src="http://placehold.it/30x30">'내 닉네임'님, 오늘 '우리'동의 이야기를 들려주세요!</p>
+		<p><a href="미구현">동네생활 글쓰기</a></p>
+		<hr>
+		<!-- 동네 생활 글 -->
+		<!-- 이걸 잘 모르겠음 -->
+		<img src="http://placehold.it/20x20">
+		<p style="font-size:12px"><b>닉네임</b>&nbsp;'ㅇㅇ'동</p>
+		<p>글내용입니다</p>
+		<p>여러가지 작성할 수 있습니다</p>
+		<p>그런데 일정 글자 이상이면 자동으로 줄바꿈하는 방법을 모르겠습니다.</p>
+		<p>웹 브라우저를 전체화면으로 하면 다 한줄로 보여서</p>
+		<P>지금은 p태그를 여러번 넣고 있습니다.</P>
+		<p>글이 많으면 더보기로 줄이는데 이것도 어떻게 하는지 모르겠습니다.</p>
+		<img src="http://placehold.it/300x300">
+		<hr>
+		<form>
+			<!-- 공감하기 체크박스 -->
+			<label for="empathize">공감하기</label>
+			<input id="empathize" type="checkbox" name="empathize" value="공감하기">
+		</form>
+		<!-- 댓글쓰기 -->
+		<!-- 글쓰기 페이지로 넘김 -->
+		<a href="미구현">댓글쓰기</a>
+	</body>
+</html>

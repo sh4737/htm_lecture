@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>네이버 : 회원가입</title>
+	</head>
+	<body>
+		<!-- 상단 -->
+		<h1><a href="www.naver.com">NAVER</a></h1>
+		<form action="">
+			<!-- 아이디 및 비밀번호 -->
+			<h3><label for="id">아이디</label></h3>
+			<input id="id" type="text" name="id" value="@naver.com">
+			<h3><label for="pswd1">비밀번호</label></h3>
+			<input id="pswd1" type="password" name="pswd1">
+			<h3><label for="pswd2">비밀번호 재확인</label></h3>
+			<input id="pswd2" type="password" name="pswd2">
+			<br>
+			
+			<!-- 이름, 생년월일 -->
+			<h3><label for="name">이름</label></h3>
+			<input id="name" type="text" name="name">
+			<h3><label for="yy">생년월일</label></h3>
+			<table>
+				<tr>
+					<td><input id="yy" type="text" name="bir_yy" value="년(4자)"></td>
+					<td>
+						<select>
+							<option>월</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+					</td>
+					<td><input id="dd" type="text" name="bir_dd" value="일"></td>
+				</tr>
+			</table>
+			<h3><label for="gender">이름</label></h3>
+			<select id="gender">
+				<option>성별</option>
+				<option>남자</option>
+				<option>여자</option>		
+				<option>선택 안함</option>	
+			</select>
+			<h3><label for="email">본인 확인 이메일</label></h3>
+			<p style="font-size:12px">(선택)</p>
+			<input id="email" type="text" name="email" value="선택입력">
+			
+			<!-- 휴대전화 번호, 인증번호 입력 -->
+			<h3><label for="phoneNo">휴대전화</label></h3>
+			<select id="nationNo">
+				<option>대한민국 +82</option>
+				<option>일본 +81</option>
+				<option>베트남 +84</option>
+				<option>홍콩 +852</option>
+				<option>마카오 +853</option>
+				<option>캄보디아 +855</option>
+				<option>라오스 +856</option>
+				<option>중화인민공화국 +86</option>
+				<option>방글라데시 +880</option>
+				<option>중화민국 +886</option>
+			</select>
+			<br>
+			<input id="phoneNo" type="tel" name="phoneNo" value="전화번호 입력">
+			<input type="button" name="verifyNo" value="인증번호 받기">
+			<br>
+			<input id="authNo" type="tel" name="authNo" value="인증번호 입력하세요">
+			<br>
+			<br>
+			<input id="btnJoin" type="submit" name="btnJoin" value="가입하기">
+		</form>
+	</body>
+</html>
