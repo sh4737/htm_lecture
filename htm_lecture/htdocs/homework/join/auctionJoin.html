@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>옥션 회원가입</title>
+	<style>
+		.f_11 {
+			font-size: 11px;
+		}
+		.ncss {
+			color: green;
+		}
+		.select {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>옥션 회원가입</h1>
+		<hr>
+		<form action="">
+			<div>
+				<h1>1 정보입력</h1>
+				<div>
+					<input id="name" type="text" name="name" placeholder="이름">
+					<br>
+					<input id="id" type="text" name="id" placeholder="아이디">
+					<br>
+					<input id="pswd1" type="password" name="pswd1" placeholder="비밀번호">
+					<a class="f_11" href="https://memberssl.auction.co.kr/Membership/IDPW/popup_passhelp.html">비밀번호 도움말</a>
+					<br>
+					<input id="pswd2" type="password" name="pswd2" placeholder="비밀번호 재입력">
+					<table>
+						<tr>
+							<td>
+								<select>
+									<option>휴대폰 번호 선택</option>
+									<option>010</option>
+									<option>011</option>
+									<option>0130</option>
+									<option>016</option>
+									<option>017</option>
+									<option>018</option>
+									<option>019</option>
+								</select>
+							</td>
+							<td>
+								<p>-</p>
+							</td>
+							<td>
+								<input id="phn_num_mid" type="text" name="phn_num_mid">
+							</td>
+							<td>
+								<p>-</p>
+							</td>
+							<td>
+								<input id="phn_num_back" type="text" name="phn_num_back">
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>
+								<input id="email" type="text" name="email" placeholder="이메일">
+							</td>
+							<td>
+								<p>@</p>
+							</td>
+							<td>
+								<select>
+									<option>선택</option>
+									<option>naver.com</option>
+									<option>hanmail.net</option>
+									<option>daum.net</option>
+									<option>nate.com</option>
+									<option>gmail.com</option>
+									<option>hotmail.com</option>
+									<option>직접입력</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<h1>2 약관동의</h1>
+				<div>
+					<table>
+						<tr>
+							<th>
+								<input id="all_agree" type="checkbox" name="all_agree" value="all_agree">
+								<label for="all_agree">옥션 사입 전체약관 및 마케팅정보 수신에 동의합니다.</label>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input id="1_agree" type="checkbox" name="1_agree" value="1_agree">
+								<label for="1_agree"><span class="ncss">(필수)</span>옥션 이용약관</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/provision1.aspx">전체보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="2_agree" type="checkbox" name="2_agree" value="2_agree">
+								<label for="2_agree"><span class="ncss">(필수)</span>전자금융거래약관</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/finance.aspx">전체보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="3_agree" type="checkbox" name="3_agree" value="3_agree">
+								<label for="3_agree"><span class="ncss">(필수)</span>개인정보 수집 및 이용</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/popup/Popup_IndivisualInfo.aspx">내용보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="4_agree" type="checkbox" name="4_agree" value="4_agree">
+								<label for="4_agree"><span class="select">(선택)</span>개인정보 제3자(판매자) 제공</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/popup/Popup_ThirdParty.aspx">내용보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="5_agree" type="checkbox" name="5_agree" value="5_agree">
+								<label for="5_agree"><span class="select">(선택)</span>개인정보 수집 및 이용</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/popup/Popup_IndividualInfo_option.aspx">내용보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="6_agree" type="checkbox" name="6_agree" value="6_agree">
+								<label for="6_agree"><span class="select">(선택)</span>위치정보 이용약관</label>
+								<a class="f_11" href="https://memberssl.auction.co.kr/membership/signup/provision3.aspx">전체보기</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="7_agree" type="checkbox" name="7_agree" value="7_agree">
+								<label for="7_agree"><span class="select">(선택)</span>이벤트/쇼핑정보 SMS수신동의</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="8_agree" type="checkbox" name="8_agree" value="8_agree">
+								<label for="8_agree"><span class="select">(선택)</span>이벤트/쇼핑정보 이메일수신동의</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<ul>
+					<li class="f_11">7세 이상 14세 미만 회원은 회원가입 후 모바일에서 본인인증, 법정대리인 인증을 진행하면 서비스를 이용하실 수 있습니다.</li>
+					<li class="f_11">선택약관에 동의하지 않아도 회원가입은 가능합니다.</li>
+				</ul>
+				<p>옥션 약관과 개인정보 수집 및 이용을 확인하였으며 이에 동의하십니까?</p>
+				<br>
+				<input id="agree_join" type="submit" name="agree_join" value="동의하고 회원가입">
+				<input type="button" value="취소" onclick="history.back(-1);">
+			</div>
+		</form>
+		<br>
+		<hr>
+		<div>
+			<h1>약관 중요사항 고지</h1>
+			<article>
+				<h5><span class="ncss">(필수)</span>옥션 이용약관</h5>
+				<textarea rows="" cols="">1. 회원에 대한 통지는 회원정보에 기재된 주소 또는 e-mail주소에 도달함으로써 통지된 것으로 보며, 정보 수정/미수정으로 인한 책임은 회원이 부담함. (제12조)
+					2. 회원자격이 정지되거나 경매서비스(일반경매, 즉시구매, 고정가판매 및 공동경매 포함)의 이용 등이 제한될 수 있음. (제15조)
+					3. 구매자는 물품 수령 후 7일 이내 물품의 반품 또는 교환 요청 가능. (제26조 마항)
+					4. 판매예치금에서 회사에 대한 채무금을 우선 출금 및 구매자의 정당한 요청에 판매예치금에서 출금하여 구매자에게 환불 가능. (제27조의2)
+					5. 서비스 제공 대가로 등록서비스이용료, 유료부가서비스이용료, 판매서비스이용료 등을 부과할 수 있음. (제30조)
+					6. 옥션은 통신판매중개자로서 회원 상호간의 거래에 관여하지 않으며 어떠한 보증 및 책임도 부담하지 않음. (제16조, 제31조)</textarea>
+					
+				<h5><span class="ncss">(필수)</span>전자금융거래약관</h5>
+				<textarea rows="" cols="">1. 접근매체의 양도 · 양수, 대여 · 사용위임, 질권설정 기타 담보 제공 및 이의 알선과 접근매체를 제3자에게 누설 · 노출, 방치하는 것은 금지됨. (제17조, 제21조, 제23조)
+					2. 소비자가 재화 등을 공급받은 날부터 3영업일이 지나도록 정당한 사유의 제시 없이 그 공급받은 사실을 통보하지 않는 경우 소비자의 동의 없이 판매자에게 결제대금을 지급할 수 있으며, 회사가 결제대금을 지급하기 전에 소비자가 그 결제대금을 환급 받을 사유가 발생한 경우 이를 소비자에게 환급함. (제19조)
+					3. 이용자의 선불전자지급수단 잔액이 구매 취소 등의 사유 발생으로 회사가 이용자로부터 환수해야 하는 환수대상액보다 작을 경우 회사는 당해 이용자의 선불전자지급수단을 마이너스로 처리할 수 있음. (제27조)</textarea>	
+			
+				<!-- textarea안에 table을 넣을 수 없음 -->
+				<h5><span class="ncss">(필수)</span>개인정보 수집 및 이용</h5>
+				<textarea rows="" cols="">
+					<!-- <table>
+						<tr>
+							<th>목적</th>
+							<th>항목</th>
+						</tr>
+					</table> -->
+				</textarea>
+				
+				<h5><span class="select">(선택)</span>위치정보 이용약관</h5>
+				<textarea rows="" cols="">1. 회원의 현 위치를 이용한 쇼핑정보를 제시하는 서비스(위치기반서비스)를 제공하며, 해당 정보의 진실성, 타당성, 사실 부합성 또는 객관성 등에 관하여 일체의 책임 부인. (제5조)
+					2. 위치정보 이용 · 제공 · 사실 확인자료를 자동으로 1년간 기록 · 보존함. 위치정보 수집 시 제공받는자, 제공일지 및 제공목적을 통보함. (제6조)
+					3. 회원은 위치정보 제3자 제공에 대한 동의 철회 가능하며, 이 경우 회사는 확인자료를 파기함 (제7조)</textarea>	
+			</article>
+		</div>
+	</section>
+</body>
+</html>

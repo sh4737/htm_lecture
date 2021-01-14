@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>카카오계정</title>
+</head>
+<body>
+	<header>
+		<h1>kakao</h1>
+	</header>
+	<section>
+		<h2>카카오계정 정보를 입력해주세요</h2>
+		<form>
+			<div>
+				<h6><label for="email_id">카카오 계정 이메일</label></h6>
+				<input id="email_id" type="text" name="email_id" placeholder="아이디 입력">
+				<p>@kakao.com</p>
+				<ul>
+					<li style="font-size:12px">입력한 카카오메일로 카카오계정에 로그인할 수 있습니다.</li>
+					<li style="font-size:12px">한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해주세요.</li>
+					<li style="font-size:12px">생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+				</ul>
+			</div>
+			<div>
+				<h6><label for="pswd1">비밀번호</label></h6>
+				<input id="pswd1" type="password" name="pswd1" placeholder="비밀번호(8~32자리)">
+				<h6><label for="pswd2">비밀번호</label></h6>
+				<input id="pswd2" type="password" name="pswd2" placeholder="비밀번호 재입력">
+			</div>
+			<div>
+				<h6><label for="nic">닉네임</label></h6>
+				<input id="nic" type="text" name="nic" placeholder="닉네임을 입력해주세요.">
+			</div>
+			<div>
+				<h6><label for="phoneNo">휴대전화</label></h6>
+				<select id="nationNo">
+					<option>대한민국 +82</option>
+					<option>일본 +81</option>
+					<option>베트남 +84</option>
+					<option>홍콩 +852</option>
+					<option>마카오 +853</option>
+					<option>캄보디아 +855</option>
+					<option>라오스 +856</option>
+					<option>중화인민공화국 +86</option>
+					<option>방글라데시 +880</option>
+					<option>중화민국 +886</option>
+				</select>
+				<input id="phoneNo" type="text" name="phoneNo" placeholder="전화번호">
+				<br>
+				<input id="verifyNo" type="button" name="verifyNo" value="인증번호 전송">
+			</div>
+			<br>
+			<br>
+			<div>
+				<h6><label for="bir_gen">생일/성별</label></h6>
+				<table id="bir_gen">
+					<tr>
+						<td>
+							<select id="yy">
+								<option>연도</option>
+								<option>2007</option>
+								<option>2006</option>
+								<option>2005</option>
+								<option>2004</option>
+								<option>2003</option>
+								<option>2002</option>
+								<option>2001</option>
+								<option>2000</option>
+								<option>1999</option>
+								<option>1998</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option>월</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+						</td>
+						<td>
+							<select>
+								<option>일</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+						</td>
+						<td>
+							<input id="luna" type="checkbox" name="luna">
+							<label for="luna">음력</label>
+						</td>
+					</tr>
+				</table>
+				<input id="no_choice" type="radio" name="gender" value="no_choice">
+				<label for="no_choice">선택안함</label>
+				<input id="woman" type="radio" name="gender" value="w">
+				<label for="woman">여성</label>
+				<input id="man" type="radio" name="gender" value="m">
+				<label for="man">남성</label>
+			</div>
+			<br>
+			<br>
+			<div>
+				<input id="next" type="submit" name="next" value="다음">
+			</div>
+		</form>
+	</section>
+	<br>
+	<footer>
+		<a href="https://www.kakao.com/policy/terms?lang=ko" style="font-size:12px">이용약관</a>
+		<a href="https://www.kakao.com/policy/privacy?lang=ko" style="font-size:12px"><b>개인정보 처리방침</b></a>
+		<a href="https://www.kakao.com/policy/oppolicy?lang=ko" style="font-size:12px">운영정책</a>
+		<a href="https://cs.kakao.com/" style="font-size:12px">고객센터</a>
+		<a href="https://www.kakao.com/notices?lang=ko" style="font-size:12px">공지사항</a>
+		<select id="language">
+			<option>한국어</option>
+			<option>English</option>
+			<option>日本語</option>
+		</select>
+		<br>
+		<p style="font-size:12px">Copyright &copy; <b>KaKao Corp.</b> All rights reserved.</p>
+	</footer>
+</body>
+</html>

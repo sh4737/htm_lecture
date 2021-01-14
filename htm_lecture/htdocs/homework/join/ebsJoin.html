@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EBS - 회원가입</title>
+	<style>
+		.p_red { 
+			color: red;
+			font-size: 12px
+		}
+		.p_pupl { 
+			color: purple;
+			font-size: 12px
+		}
+		#teacher {
+			font-size: 12px
+		}
+		#c_blue {
+			color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="https://www.ebs.co.kr/main">
+				<img src="http://placehold.it/100x50">
+			</a>
+			<a href="https://sso.ebs.co.kr/idp/join/intro.jsp">회원가입</a>
+		</h1>
+	</header>
+	<hr>
+	<section>
+		<div>
+			<h2>정보입력 및 본인확인</h2>
+		</div>
+		<form action="">
+			<div>
+				<table>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<input id="id" type="text" name="id" placeholder="아이디">
+							<input id="id_check" type="button" name="id_check" value="중복확인">
+							<p class="p_red">6~12자의 영문소문자와 숫자 사용.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td>
+							<input id="pswd1" type="password" name="pswd1" placeholder="비밀번호">
+							<p class="p_red">8~12자의 영문대소문자, 숫자, 특수문자 중 2종류 이상을 조합한 10자리 이상 또는 3종류이상을 조합한 8자리 이상 사용가능.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>비밀번호 확인</th>
+						<td>
+							<input id="pwsd2" type="password" name="pwsd2" placeholder="비밀번호 확인">
+							<p class="p_red">비밀번호를 다시 확인해주세요.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td>
+							<input id="name" type="text" name="name" placeholder="이름">
+							<p class="p_red">이름을 입력해주세요.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>성별</th>
+						<td>
+							<input id="man" type="radio" name="gender" value="m">
+							<label for="man">남성</label>
+							<input id="woman" type="radio" name="gender" value="w">
+							<label for="woman">여성</label>
+							<input id="gen_agree" type="checkbox" name="gen_agree" value="gen_agree">
+							<label for="gen_agree">선택정보(성별) 수집 및 이용 동의</label>
+						</td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<select id="bir_yy">
+											<option>1980</option>
+											<option>1981</option>
+											<option>1982</option>
+											<option>1983</option>
+											<option>1984</option>
+										</select>
+									</td>
+									<td>
+										<p>년</p>
+									</td>
+									<td>
+										<select id="bir_mm">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+										</select>
+									</td>
+									<td>
+										<p>월</p>
+									</td>
+									<td>
+										<select id="bir_dd">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+										</select>
+									</td>
+									<td>
+										<p>일</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td>
+							<table>
+								<tr>
+									<td>
+										<input id="id_email" type="text" name="id_email" placeholder="이메일">
+									</td>
+									<td>
+										<p>@</p>
+									</td>
+									<td>
+										<input id="domain_email" type="text" name="domain_email">
+									</td>
+								</tr>
+							</table>
+							<p class="p_pupl">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</p>
+							<p class="p_red">이메일을 입력해 주세요.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>휴대폰</th>
+						<td>
+							<input id="phone_num" type="tel" name="phone_num" placeholder="휴대폰">
+							<br>
+							<input id="phn_agree" type="checkbox" name="phn_agree" value="phn_agree">
+							<label for="phn_agree">선택정보(휴대폰) 수집 및 이용 동의</label>
+							<p class="p_pupl">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</p>
+							<p class="p_red">휴대폰번호를 입력하려면, 휴대폰번호 정보제공에 동의해 주세요.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>인증방법</th>
+						<td>
+							<input id="phone" type="radio" name="venify" value="p">
+							<label for="phone">휴대폰</label>
+							<input id="email" type="radio" name="venify" value="e">
+							<label for="email">이메일</label>
+							<input id="venify_button" type="button" name="venify_button" value="인증">
+							<p class="p_pupl">휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>인증번호</th>
+						<td>
+							<input id="vef_num" type="text" name="vef_num" placeholder="인증번호">
+							<input id="confirm_button" type="button" name="confirm_button" value="확인">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<p id="teacher"> ※ 교사 회원님을 위한 교사인증은 가입 후 회원정보수정에서 인증하실 수 있습니다.</p>
+			</div>
+			<br>
+			<div>
+				<input id="sub-btn" type="submit" name="sub-btn" value="확인">
+			</div>
+		</form>
+	</section>
+	<footer>
+		<div>
+			<ul>
+				<li>
+					<a href="https://sso.ebs.co.kr/idp/policy/termsinfo/termsInfo.jsp">이용자 가이드</a>
+				</li>
+				<li>
+					<a href="https://sso.ebs.co.kr/idp/policy/termsinfo/termsInfo.jsp">이용약관</a>
+				</li>
+				<li>
+					<a id="c_blue" href="https://sso.ebs.co.kr/idp/policy/privacy/privacy.jsp"><b>개인정보처리방침</b></a>
+				</li>
+				<li>
+					<a href="https://sso.ebs.co.kr/idp/user/find/id.jsp">아이디찾기</a>
+					/
+					<a href="https://sso.ebs.co.kr/idp/user/reissue/password.jsp">비밀번호 재발급</a>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<div>
+			<ul>
+				<li>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사​&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)
+				</li>
+				<li>
+					EBS 스마트 고객센터 : 1588-1580&nbsp;&nbsp;|&nbsp;&nbsp;인터넷문의 : 
+					<a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;부가통신사업신고 : 10077 통신판매업신고 : 고양일산동-1415호&nbsp;
+					<a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2298201343" target="_blank" class="info">[사업자정보확인]</a>
+				</li>
+			</ul>
+			<p>Copyright &copy; EBS All Rights Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
