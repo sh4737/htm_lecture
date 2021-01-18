@@ -348,6 +348,11 @@
 			padding-top: 6px;
 		}
 		
+		#policy {
+			padding: 20px 20px;
+			color: #4e4e4e;
+		}
+		
 		/* footer */
 		footer {
 			 width: 1160px;
@@ -356,12 +361,71 @@
 			 font-size: 12px;
 		}
 		
+		#app_menu {
+			width: 1160px;
+			text-align: center;
+			margin: 20px auto;
+
+		}
+		
+		#app_menu > a {
+			display: inline-block;
+			margin: 6px auto;
+			padding: 30px;
+		}
+		
+		#app_menu h3 {
+			font-size: 24px;
+		}
+		
+		#app1, #app2 {
+			border-right: 1px solid #dcdcdc;
+		}
+		
+		#app1 {
+			color: #d32f2f;
+			font-size: 14px;
+		}
+		
+		#app2 {
+			color: #3b5998;
+			font-size: 14px;
+		}
+		
+		#app3 {
+			color: #7b1fa2;
+			font-size: 14px;
+		}
+		
+		#bottom_menu1 {
+			margin: 10px;
+			font-size: 14px;
+			font-weight: bold;
+			color: #4e4e4e;
+		}
+		
+		#bottom_menu1 li {
+			padding: 10px;
+		}
+		
+		#bottom_menu2 {
+			margin: 10px;
+			overflow: hidden;
+		}
+		
 		#bottom_menu2 li {
 			float: left;
+			padding: 10px;
+			border-right: 1px solid #dcdcdc;
+		}
+		
+		#bottom_menu2 a {
+			color: #4e4e4e;
 		}
 		
 		#copyright {
 			width: 734.5px;
+			margin: 10px;
 		}
 		
 		
@@ -628,7 +692,7 @@
 				</div>
 			</div>
 			<hr>
-			<div>
+			<div id="policy">
 				<h2>이용 약관</h2>
 				<br>
 				<P style="font-size:10px">각 호텔에 대한 자세한 내용은 위에서 관심 있는 호텔을 클릭하여 확인해 주시기 바랍니다. 여행 날짜를 입력하시면 해당 기간에 적용되는 할인 가격을 조회하실 수 있습니다. 이 프로모션 페이지에서 홍보하는 호텔 할인 요금은 일부 호텔에만 적용되며 모든 요금은 이용 가능 여부에 따라 다릅니다. 홈페이지에서 검색하여 할인 호텔 요금을 확인하실 수도 있습니다. 요금은 2인실 1개 기준이며, 모든 세금과 수수료를 포함합니다.</P>
@@ -637,8 +701,34 @@
 		
 	</section>
 	<footer>
+		<div id="app_menu">
+			<h2>다음 중 하나를 선택해 저렴하게 예약하세요!</h2>
+			<a id="app1" href="#">
+				<h3>이메일</h3>
+				<p>최신 프로모션 뉴스레터를 구독하세요.</p>
+			</a>
+			<a id="app2" href="#">
+				<h3>Hotels.com 앱</h3>
+				<p>앱을 다운로드하여 언제 어디서나 편리하게 예약하세요.</p>
+			</a>
+			<a id="app3" href="#">
+				<h3>Hotels.com™ 호텔스닷컴 리워드</h3>
+				<p>지금 바로 가입하세요! 스탬프 10개를 모으면 리워드* 1박!</p>
+			</a>
+			
+		</div>
 		<div id="bottom_menu1">
-		
+			<ul>
+				<li>인기 목적지</li>
+				<li>인기 국가 및 지역</li>
+				<li>지원 및 자주 묻는 질문</li>
+				<li>공급업체, 제휴사, 미디어 해당 섹션</li>
+				<li>이용약관 및 개인정보 보호정책</li>
+				<li>사이트에 대한 의견</li>
+				<li>회사소개</li>
+				<li>숙박 시설 등록하기</li>
+				<li>채용</li>
+			</ul>
 		</div>
 		<div id="bottom_menu2">
 			<ul>
