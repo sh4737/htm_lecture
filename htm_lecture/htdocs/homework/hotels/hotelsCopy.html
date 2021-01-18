@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>국내 펜션 특가</title>
+	<style>
+		/* 초기화 */
+		* { 
+			margin: 0; padding: 0;
+			font-family: 'Malgun Gothic',arial,sans-serif;
+		}
+		
+		a { text-decoration: none; }
+		
+		li {
+			list-style: none;
+		}
+		
+		.cen_wid { 
+			width: 1160px;
+			 margin: 0 auto;
+		}
+		
+		.bold {
+			font-weight: bold;
+			font-size: 12px;
+		}
+		
+		.f_green {
+			color: #458f00;
+			font-size: 14px;
+		}
+		
+		.f_blue {
+			color: #003789;
+			font-size: 14px;
+		}
+		
+		.table_wap {
+			display: table-cell;
+    		vertical-align: middle;
+		}
+		
+		div.clear {
+			clear: both;
+		}
+		
+		/* .table_con {
+			display: table-cell;
+		} */
+		
+		/* header */
+		#header {
+			left: 0; top: 0; right: 0;
+			height: 59px;
+			background-color: #D32F2F;
+			position: relative;
+		}
+		#header_container {
+			margin: 0 auto;
+			width: 1200px; height: 59px;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		#logo {
+			left: 10px; top: 8px;
+			position: absolute;
+		}
+		
+		#top_nav {
+			right: 0px; top: 0px;
+			width: 500px; height: 59px;
+			position: absolute;
+			font-size: 14px;
+			color: white;
+			
+		}
+		
+		#top_ul {
+			right: 0px; top: 0px;
+		}
+		
+		#top_ul > li {
+			list-style: none;
+			float: left;
+			padding: 22px 18px;
+		}
+		
+		#top_ul a {
+			color: white;
+		}
+		
+		#login_bu {
+			width: 42px; height: 59px;
+			background: #9c0c1e;
+		}
+		
+		#sub_nav {
+			width: 1200px; height: 32px;
+			margin: 0 auto;
+		}
+		
+		#sub_ul > li {
+			list-style: none;
+			float: left;
+			margin: 0 16px;
+			padding-top: 8px;
+			font-size: 12px;
+		}
+		
+		/* section */
+		#search_container {
+			height: 266px;
+			background-image: url('pic_001.jpg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		
+		#search_container > div {
+			margin-bottom: 20px;
+		}
+		
+		#search_root {
+			font-size: 12px;
+			color: white;
+		}
+		
+		#search_root a, #search_title {
+			color: white;
+		}
+		
+		#search_title > h1 {
+			font-size: 32px;
+			text-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+		
+		#search_title > p {
+			font-size: 20px;
+			text-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+		
+		#search_box {
+			width: 1142px; height: 97px;
+			margin: 0 auto;
+			border-width: 0.5px;
+			border-style: solid;
+			border-color: #151515;
+			border-radius:5px;
+			background-color: #F5F4F0;
+			overflow: hidden;
+		}
+		
+		#search, #day, #search_opt, #ser_buttonbox	{
+			float: left;
+			top: 50%;
+			margin: 10px 8px;
+		}
+		
+		#search_text {
+		  width:360px;
+		  height: 22px;
+		  font-size:12px;
+		}
+		
+		.textbox_size {
+			width: 140px;
+			font-size:12px;
+		}
+		
+		#day {
+			overflow: hidden;
+		}
+		
+		#day > div {
+			float: left;
+			margin: 0 18px;
+		}
+		
+		#check_in, #check_out {
+			width: 122px;
+		}
+		
+		#search_opt {
+			align-self: right;
+			font-size: 12px;
+		}
+		
+		#search_opt > div {
+			float: left;
+			margin: 0 8px;
+			text-align: right;
+		}
+		
+		#search_button {
+			width: 62px; height: 31px;
+			margin-top:10px;
+			background-color: #156BC1;
+			color: white;
+			border: 1px solid #156bc1;
+		    border-radius: 2px;
+		    box-shadow: inset 0 -2px 0 #063665;
+		}
+		
+		#guarantee {
+			width: 1142px; height: 37px;
+			margin: 15px auto;
+			border-width: 0.5px;
+			border-style: solid;
+			border-color: #BDBDBD;
+			border-radius:5px;
+			font-size: 12px;
+		}
+		
+		#guarantee > ul {
+			width: 922px; height: 29px;
+			margin: 10px auto;
+			text-align: center;
+			
+		}
+		
+		#guarantee li {
+			display: inline-block;
+			padding: 0 10px;
+			
+		}
+		
+		#dashed {
+			border-bottom: 1px dashed #999;
+     		text-decoration: none;
+			
+		}
+		
+		#section_anchors {
+			width: 1144px; height: 55px;
+			margin: 0 auto;
+		}
+		
+		#section_anchors li {
+			margin: 0 16px 10px 0;
+			padding: 4px 16px;
+			border-radius: 12px;
+			background-color: #E8E8E8;
+			float: left;
+			font-size: 14px;
+		}
+		
+		#ul_anchors a {
+			color: #156bc1;
+		}
+		
+		#contents {
+			height: 1900px;
+			background-color: #f5f4f0;
+			overflow: hidden;
+			position: relative;
+			border-radius: 0 0 15px 15px;
+		}
+		
+		.sec_title {
+			margin: 5px 12px 5px 0px;
+			left: 10px; top: 10px;
+			position: absolute;
+			font-size: 30px;
+		}
+		
+		.top_container {
+			width: 936; height: 72px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.bottom_container {
+			width: 936; height: 72px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.anchor_bu_top {
+			right: 20px; top: 20px;
+			position: absolute;
+		}
+		
+		.anchor_bu_botm {
+			right: 20px; bottom: 20px;
+			position: absolute;
+		}
+		
+		.button_op {
+			width: 180px; height: 32px;
+			line-height: 32px;
+			background-color: #156bc1;
+		    border: 1px solid #156bc1;
+		    border-radius: 2px;
+		    box-shadow: inset 0 -2px 0 #063665;
+		    font-size: 16px;
+		    color: white;
+		    display: inline-block;
+		    position: relative;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+		
+		.item {
+			width: 250px; height: 370px;
+			border-radius: 4px;
+			padding: 8px;
+			background-color: white;
+			border-bottom: 1px solid #ccc;
+			box-shadow: 0 1px 0 0 #7e7e7e;
+			
+			float: left;
+			margin: 15px 11px;
+			position: relative;
+		}
+		
+		.con_img {
+			width: 248px; height: 146.31px;
+		}
+		
+		.star_p {
+			font-size: 12px;
+			font-weight: bold;
+		}
+		
+		.rating_p {
+			color: #458f00;
+			font-weight: bold;
+		}
+		
+		.bottom-content {
+			width: 72.58px; height: 32px;
+			left: 87.71px; top: 86%;
+			position: absolute;
+			border: 1px solid #156bc1;
+		    border-radius: 2px;
+		    font-size: 13px;
+		    font-weight: bold;
+		    color: #156bc1;
+		    
+		    text-align: center;
+		    
+		    
+		}
+		
+		.bottom-content > p {
+			padding-top: 6px;
+		}
+		
+		/* footer */
+		footer {
+			 width: 1160px;
+			 padding-bottom: 100px;
+			 margin: 0 auto;
+			 font-size: 12px;
+		}
+		
+		#bottom_menu2 li {
+			float: left;
+		}
+		
+		#copyright {
+			width: 734.5px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div id="header_container">
+				<div id="logo">
+					<a href="https://kr.hotels.com/?intlid=OTHER+%3A%3A+header_main_section"><img src="hotels_logo.png" width="180px" height="50px"></a>
+				</div>
+				<div id="top_nav">
+					<ul id="top_ul">
+						<li>언어</li>
+						<li>KRW</li>
+						<li>도움말</li>
+						<li><a href="https://kr.hotels.com/profile/signin.html?target=H4sIAAAAAAAAABXCwQqAIAwA0K_x6qJuQUSHoFsQ3cVMcqRbuPX_0eMl1Ud6gLvaxBqz2MAFfAj8ksLBfCNdklHUJi15RNKM57Duy7yZtjHd9G-bFP0ZqyseyUkMikwfpBMayVsAAAA.">내 예약 정보</a></li>
+						<li><a href="https://kr.hotels.com/profile/signup.html?intlid=OTHER+%3A%3A+header_main_section&target=H4sIAAAAAAAAANMvSS3NTk_UzcgvSc3RLU7MSy_Iz8_VL0jNK87Mz9MHAP7q3J4fAAAA">회원 가입</a></li>
+						<li id="login_bu"><a href="https://kr.hotels.com/profile/signin.html?intlid=OTHER+%3A%3A+header_main_section&target=H4sIAAAAAAAAANMvSS3NTk_UzcgvSc3RLU7MSy_Iz8_VL0jNK87Mz9MHAP7q3J4fAAAA">로그인</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="sub_nav">
+			<ul id="sub_ul">
+				<li><a href="https://kr.hotels.com/teukga-hotel-sangpoom/?intlid=OTHER+%3A%3A+header_main_section">특가 상품</a></li>
+				<li><a href="https://kr.hotels.com/page/first-time-user-guide/?intlid=OTHER+%3A%3A+header_main_section">사이트 이용 안내</a></li>
+				<li><a href="https://welcome.expediagroup.com/ko/how-to-list-your-property-on-hotels?utm_term=unknown&utm_campaign=OTHER&utm_medium=referral&lasttouchMktgcode=unknown&utm_source=HCOM_KR-ko_KR&utm_content=header-link">숙박 시설 등록하기</a></li>
+				<li><a href="https://kr.hotels.com/hotel-rewards-pillar/hotelscomrewards.html?intlid=OTHER+%3A%3A+header_main_section">Hotels.com™ 호텔스닷컴 리워드</a></li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div id="search_container">
+			<div id="search_root" class="cen_wid">
+				<p><a href="#">호텔</a> > <a href="#">특가 상품</a> > 국내 펜션 특가</p>
+			</div>
+			<div id="search_title" class="cen_wid">		<!-- 위치, 그림자 -->
+				<h1>국내 펜션 특가</h1>
+				<p>지금 예약하세요!</p>
+			</div>
+			<div id="search_box">		<!-- 모서리 라운드 -->
+				<form action="/search.do" role="search">
+					<div id="search" class="table_wap">
+						<label for="search_text" class="bold">목적지 또는 숙박 시설을 입력하세요.</label><br>
+						<input id="search_text" type="text" name="search_text" value="제주시, 한국" >
+					</div>
+					<div id="day">
+						<div id="check_in_box" class="textbox_size table_wap">
+							<label for="check_in" class="bold">체크인</label>
+							<input id="check_in" type="text" name="check_in" value="2021/01/24" >
+							<span>일요일</span>
+						</div>
+						<div id="check_out_box" class="textbox_size table_wap">
+							<label for="check_in" class="bold">체크아웃</label>
+							<input id="check_in" type="text" name="check_in" value="2021/01/25" >
+							<span>월요일</span>
+						</div>
+						<div>
+							<span class="bold">1박</span>
+						</div>
+					</div>
+					<div id="search_opt">
+						<div id="room" class="table_wap">
+							<label for="room_sel" class="bold">객실</label><br>
+							<select id="room_sel">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9+</option>
+							</select>
+						</div>
+						<div id="adult" class="table_wap">
+							<label for="adult_sel" class="bold">성인</label><br>
+							<select id="adult_sel">
+								<option>1</option>
+								<option selected>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+							</select>
+							<br>
+							<span>만 18세 이상</span>
+						</div>
+						<div id="child" class="table_wap">
+							<label for="child_sel" class="bold">아동</label><br>
+							<select id="child_sel">
+								<option selected>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+							</select>
+							<br>
+							<span>만 17세 이하</span>
+						</div>
+					</div>
+					<div id="ser_buttonbox">
+						<button id="search_button" class="bold">검색</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="guarantee">
+			<ul>
+				<li><span id="dashed">대부분의 호텔</span> <span class="f_green bold">무료 취소</span></li>
+				<li>대부분의 객실 <span class="f_green bold">지금 결제 또는 현장 결제 옵션</span></li>
+				<li><span class="f_blue bold">가격 보장</span></li>
+			</ul>
+		</div>
+		<div id="section_anchors">
+			<ul id="ul_anchors">
+				<li><a href="#jejusi">제주시</a></li>
+				<li><a href="#seoqwipo">서귀포</a></li>
+				<li><a href="#">강릉</a></li>
+				<li><a href="#">여수</a></li>
+				<li><a href="#">경주</a></li>
+				<li><a href="#">평창</a></li>
+				<li><a href="#">양양</a></li>
+				<li><a href="#">거제</a></li>
+				<li><a href="#">가평</a></li>
+				<li><a href="#">남해</a></li>
+				<li><a href="#">통영</a></li>
+				<li><a href="#">태안</a></li>
+			</ul>      
+		</div>
+		<div id="contents" class="cen_wid">
+			<div id="jejusi">
+				<div class="top_container">
+					<h4 class="sec_title">제주시</h4>
+					<div class="anchor_bu_top">
+						<a href="#" class="bold button_op">특가 상품 모두 보기</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div class="item">
+						<img src="pic_004.jpg" class="con_img">
+						<h4>반하크라펜션</h4>
+						<p class="star_p">3.5성급</p>
+						<p class="rating_p">훌륭함 8.8 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_005.jpg" class="con_img">
+						<h4>송당송당 펜션앤리조트</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">매우 좋음 8.0 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_006.jpg" class="con_img">
+						<h4>허브인휴양펜션</h4>
+						<p class="star_p">2.5성급</p>
+						<p class="rating_p">좋음 7.6 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_007.jpg" class="con_img">
+						<h4>뷰타워 리조트</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">좋음 7.4 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_008.jpg" class="con_img">
+						<h4>해변풍경펜션</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">좋음 7.0 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="bottom_container">
+					<div class="anchor_bu_botm">
+						<a href="#" class="bold button_op">특가 상품 모두 보기</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div id="seoqwipo">
+				<div class="top_container">
+					<h4 class="sec_title">서귀포</h4>
+					<div class="anchor_bu_top">
+						<a href="#" class="bold button_op">특가 상품 모두 보기</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div class="item">
+						<img src="pic_009.jpg" class="con_img">
+						<h4>제주 봄 스테이</h4>
+						<p class="star_p">3.5성급</p>
+						<p class="rating_p">매우 훌륭함 9.2 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_010.jpg" class="con_img">
+						<h4>보우힐</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">최고 좋음 9.4 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_012.jpg" class="con_img">
+						<h4>미소가 펜션</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">매우 좋음 8.2 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="pic_014.jpg" class="con_img">
+						<h4>라벤더스</h4>
+						<p class="star_p">3성급</p>
+						<p class="rating_p">좋음 7.6 / 10</p>
+						<div class="bottom-content">
+							<p>가격 보기</p>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="bottom_container">
+					<div class="anchor_bu_botm">
+						<a href="#" class="bold button_op">특가 상품 모두 보기</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div>
+				<h2>이용 약관</h2>
+				<br>
+				<P style="font-size:10px">각 호텔에 대한 자세한 내용은 위에서 관심 있는 호텔을 클릭하여 확인해 주시기 바랍니다. 여행 날짜를 입력하시면 해당 기간에 적용되는 할인 가격을 조회하실 수 있습니다. 이 프로모션 페이지에서 홍보하는 호텔 할인 요금은 일부 호텔에만 적용되며 모든 요금은 이용 가능 여부에 따라 다릅니다. 홈페이지에서 검색하여 할인 호텔 요금을 확인하실 수도 있습니다. 요금은 2인실 1개 기준이며, 모든 세금과 수수료를 포함합니다.</P>
+			</div>
+		</div>
+		
+	</section>
+	<footer>
+		<div id="bottom_menu1">
+		
+		</div>
+		<div id="bottom_menu2">
+			<ul>
+				<li><a href="/go" target="_blank">여행 가이드</a></li>
+				<li><a href="/alltop50cities/" target="_blank">50개 인기 도시</a></li>
+				<li><a href="/allcountries/" target="_blank">모든 국가</a></li>
+				<li><a href="/site-index/" target="_blank">사이트 색인</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<span class="expediagroup-logo" aria-label="Expedia Group Logo" role="img"></span>
+			<p>* 일부 호텔은 체크인 24시간 이상 전에 취소해야 합니다. 자세한 내용은 사이트에서 확인해 주세요.</p>
+			<p class="rewards-terms-and-conditions">* 리워드 1박의 금액은 적립하신 스탬프 10개의 평균 요금입니다. 세금 및 서비스 요금이 포함되지 않습니다. 사용하시는 각 리워드 숙박에 대해 ₩5,500의 수수료가 적용되지만 앱에서 사용 시 수수료가 없습니다. 제외 사항이 적용됩니다.<a href="/customer_care/terms_conditions.html" class="footer-welcome-rewards ph-ant" id="ftr-welcome-rewards" rel="nofollow" target="_blank">이용약관 보기</a>리워드 숙박에 도달하는 데 걸리는 평균 시간에 대한 참조는 2018년 1월 1일 ~ 2019년 12월 31일에 10번째 스탬프에 도달한 회원 고객의 데이터를 기반으로 합니다. 추가 혜택은 다를 수 있으며 VIP Access 숙박 시설에서만 이용 가능할 수 있습니다. 가격 보장 플러스는 패키지에 적용되지 않으며(판매되는 경우) Hotels.com에서 객실을 결제하고 체크인 시까지 Hotels.com 또는 다른 웹사이트에서 동일한 객실과 동일한 일정에 대해 더 저렴한 요금을 발견하신 경우 이용하실 수 있습니다. 더 저렴한 요금을 Hotels.com에서 찾으신 경우 결제된 요금이 환불되며, 더 저렴한 요금을 다른 웹사이트에서 발견하신 경우에는 차액을 환불해 드립니다.</p>
+			<p>© 2021 Hotels.com은 Expedia Group 계열사입니다. All rights reserved.</p>
+			<p>Hotels.com 및 Hotels.com 로고는 미국 및/또는 다른 국가에서 Hotels.com, LP의 상표 또는 등록 상표입니다. 기타 모든 상표는 해당 소유권자의 자산입니다.</p>
+			<p><span>서울시 종로구 종로5길 Tower8 9층, Tel: 02-3480-0145, Mail: </span><a class="footer-welcome-rewards" href="mailto:CS@koreasupport.hotels.com" rel="nofollow" target="_blank">CS@koreasupport.hotels.com</a></p>
+			<p><span>트래블 파트너 익스체인지 코리아 주식회사 | 사업자등록번호 821-88-01025 | 대표이사: 김상범</span></p>
+			<p><span>(주) 호텔스닷컴코리아 |사업자등록번호 : 717-81-00091ㅣ</span><a class="footer-welcome-rewards" href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자정보확인</a>ㅣ통신판매업신고번호 : 2015-서울종로-1067호</p>
+			<p><span>이 웹사이트에서 진행하신 예약과 관련한 문의사항은 [고객서비스 02-3480-0145]로 연락 주시기 바랍니다.</span></p>
+			<p><span>호텔스닷컴 웹사이트를 통해 구매할 수 있는 게재 상품 및 서비스에 대한 정보는 판매자에 의해 제공됩니다. 따라서 호텔스닷컴은 이와 관련된 정보의 정확성과 완전성 여부에 대해 책임을 지지 않습니다.</span></p>
+		</div>
+	</footer>
+</body>
+</html>
