@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>러닝 - 나이키</title>
+	<style>
+		/* 초기화 */
+		* { 
+			margin: 0;
+			padding: 0;
+			font-family: 'Malgun Gothic',arial,sans-serif;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
+		li {
+			list-style: none;
+		}
+		
+		header {
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 36px;
+			background-color: #F5F5F5;
+			position: relative;
+		}
+		
+		header img {
+			width: 20px;
+			height: 20px;
+			margin-left: 50px;
+			margin-top: 8px;
+		}
+		
+		#top-menu {
+			top: 5px;
+			right: 30px;
+			position: absolute;	
+			margin: 5px;
+			overflow: hidden;
+		}
+		
+		#top-menu > li {
+			float: left;
+			font-size: 12px;
+			padding: 0 8px;
+		}
+		
+		.top-nav-bor {
+			border-right: 1px solid #333333;
+		}
+		
+		#nav1 {
+			height: 60px;
+			position: relative;
+		}
+		
+		#nav1 > img {
+			width: 60px;
+			height: 20px;
+			margin-left: 50px;
+			margin-top: 15px;
+		}
+		
+		
+		#main-menu {
+			top: 5px;
+			left: 40%;
+			margin: 10px 0;
+			display: inline-block;
+			position: absolute;	
+			overflow: hidden;
+			text-align: center;
+		}
+		
+		#main-menu > li {
+			float: left;
+			font-size: 16px;
+			padding: 0 10px;
+		}
+		
+		#search-form {
+			top: 16px;
+			right: 150px;
+			position: absolute;	
+			display: inline-block;
+		}
+		
+		#btn_img {
+			width: 23px;
+			height: 23px;
+			border-style: none;
+		}
+		
+		#search {
+			height: 25px;
+		}
+		
+		#icons {
+			top: 14px;
+			right: 50px;
+			position: absolute;
+		}
+		
+		#icons > img {
+			width: 25px;
+			height: 25px;
+			padding: 0 6px;
+		}
+		
+		#nav2-fixed {
+			top: 96px;
+			left: 0;
+			right: 0;
+			position: fixed;
+			height: 88px;
+		}
+		
+		
+		aside {
+			top: 184px;
+			left: 0;
+			bottom: 0;
+			position: fixed;
+			width: 288px;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="Jumpman_logo.png">
+			<ul id="top-menu">
+				<li class="top-nav-bor">고객센터</li>
+				<li class="top-nav-bor">멤버 가입</li>
+				<li>로그인</li>
+			</ul>
+		</div>
+	</header>
+	<nav>
+		<div id="nav1">
+			<img src="Logo_NIKE.png">
+			<ul id="main-menu">
+				<li>New Releases</li>
+				<li>Men</li>
+				<li>Women</li>
+				<li>Kids</li>
+				<li>Sale</li>
+			</ul>
+			<div id="search-form">
+				<form method="GET" action="/kr/ko_kr/search">		
+					<button type="button">
+						<img id="btn_img" src="search.png">
+					</button> 
+					<input id="search" name="search" placeholder="검색" type="text">
+				</form>
+			</div>
+			<div id="icons">
+				<img src="gray_heart.png">
+				<img src="pack.png">
+			</div>
+		</div>
+		<div id="nav2-fixed">
+			<div>
+				<p>Men / 신발</p>
+				<h3>Men's 러닝</h3>
+			</div>
+			<div>
+				<button>FILTER</button>
+				<a>신상품순</a>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<div>
+		</div>
+		<article>
+		
+		</article>
+	</section>
+	<aside>
+		
+	</aside>
+	<footer>
+	</footer>
+</body>
+</html>
