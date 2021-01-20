@@ -8,11 +8,11 @@
 		* { 
 			margin: 0;
 			padding: 0;
-			font-family: 'Malgun Gothic',arial,sans-serif;
 		}
 		
 		a {
 			text-decoration: none;
+			color: #333333;
 		}
 		
 		li {
@@ -41,6 +41,7 @@
 			position: absolute;	
 			margin: 5px;
 			overflow: hidden;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 		}
 		
 		#top-menu > li {
@@ -52,10 +53,11 @@
 		.top-nav-bor {
 			border-right: 1px solid #333333;
 		}
-		
+
 		#nav1 {
 			height: 60px;
 			position: relative;
+			font-size: 16px;
 		}
 		
 		#nav1 > img {
@@ -117,15 +119,126 @@
 			right: 0;
 			position: fixed;
 			height: 88px;
+			background-color: white;
+			z-index: 10;
 		}
-		
-		
+
+		#nav2-title {
+			top: 35px;
+			left: 35px;
+			position: absolute;
+			margin: 20px;
+	
+		}
+
+		#nav2-sort {
+			top: 90px;
+			right: 60px;
+			position: absolute;
+		}
+
+		section {
+			margin-top: 184px;
+			margin-left: 288px;
+			position: relative;
+			z-index: 9;
+		}
+
+		#sort-menu {
+			width: 800px;
+			margin: 0 auto;
+			font-family: "Noto Sans KR", "Malgun Gothic", "MalgunGothic", Dotum, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+		}
+
+		#sort-menu > ul {
+			overflow: hidden;
+		}
+
+		#sort-menu li {
+			float: left;
+			padding: 0 20px;
+			color:#888;
+			border-right: 1px solid #e5e5e5;
+			text-align: center;
+		}
+
+		.item {
+			height: 828.58px;
+			margin: 40px 10px;
+			float: left;
+		}
+
+		.item > img {
+			width: 617.98px;
+			height: 617.98px;
+		}
+
+		.item-ad > img {
+			width: 617.98px;
+			height: 843.66px;
+		}
+
+		.item-ad {
+			margin: 0 10px;
+			margin-top: 40px;
+			float: left;
+		}
+
+		.price {
+			text-align: right;
+			font-weight: bold;
+		}
+
 		aside {
 			top: 184px;
 			left: 0;
 			bottom: 0;
 			position: fixed;
 			width: 288px;
+			font-family: "Noto Sans KR", "Malgun Gothic", "MalgunGothic", Dotum, Helvetica, Arial, sans-serif;
+		}
+
+		aside > div {
+			margin: 10px 50px;
+			padding: 10px 0;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		#aside-menu {
+			margin-top: 60px;
+		}
+
+		aside li {
+			padding: 6px;
+			font-size: 15px;
+			color: #111111;
+			line-height: 1.4em;
+			letter-spacing: -0.5px;
+			font-family: "Noto Sans KR", "Malgun Gothic", "MalgunGothic", Dotum, Helvetica, Arial, sans-serif;
+		}
+
+		#fir-menu {
+			margin-left: 10px;
+		}
+
+		#footsize {
+			width: 192px;
+			height: 322px;
+		}
+
+		#footsize  li {
+			width: 45px;
+			padding: 10px 0;
+			border-radius: 6px;
+			border: 1px solid #e5e5e5;
+			float: left;
+			text-align: center;
+			word-break: break-all;
+   			vertical-align: middle;
+			position: relative;
+			font-size: 13px;
+			letter-spacing: -1px;
 		}
 		
 	</style>
@@ -165,27 +278,153 @@
 			</div>
 		</div>
 		<div id="nav2-fixed">
-			<div>
+			<div id="nav2-title">
 				<p>Men / 신발</p>
 				<h3>Men's 러닝</h3>
 			</div>
-			<div>
+			<div id="nav2-sort">
 				<button>FILTER</button>
-				<a>신상품순</a>
+				<a href="#">신상품순</a>
 			</div>
 		</div>
 	</nav>
 	<section>
-		<div>
+		<div id="sort-menu">
+			<ul>
+				<li>전체보기</li>
+				<li>줌</li>
+				<li>리액트</li>
+				<li>프리</li>
+				<li>조이라이드</li>
+				<li>러닝화 가이드</li>
+			</ul>
 		</div>
 		<article>
-		
+			<div class="item">
+				<img src="pic_001.jpg">
+				<h4>나이키 에어 줌 페가수스 37</h4>
+				<span class="price">139,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>9 컬러</p>
+			</div>
+			<div class="item-ad">
+				<img src="pic_002.jpg">
+			</div>
+			<div class="item">
+				<img src="pic_003.jpg">
+				<h4>나이키 에어 줌 보메로 15</h4>
+				<span class="price">169,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>4 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_004.jpg">
+				<h4>나이키 줌X 베이퍼플라이 넥스트%</h4>
+				<span class="price">299,000원</span>
+				<p>성인공용 러닝화</p>
+				<p>2 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_005.jpg">
+				<h4>나이키 줌 플라이 3 </h4>
+				<span class="price">179,000원</span>
+				<p>남성 러닝화</p>
+				<p>4 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_006.jpg">
+				<h4>나이키 리액트 인피니티 런 플라이니트2</h4>
+				<span class="price">179,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>6 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_007.jpg">
+				<h4>나이키 에어 줌 페가수스 37</h4>
+				<span class="price">139,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>9 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_008.jpg">
+				<h4>나이키 에어 줌 보메로 15</h4>
+				<span class="price">169,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>4 컬러</p>
+			</div>
+			<div class="item">
+				<img src="pic_009.jpg">
+				<h4>나이키 리뉴 런 2</h4>
+				<span class="price">99,000원</span>
+				<p>남성 신발 러닝</p>
+				<p>2 컬러</p>
+			</div>
 		</article>
 	</section>
 	<aside>
-		
+		<div id="aside-menu">
+			<ul id="fir-menu">
+				<li>신발전체</li>
+				<li>라이프스타일</li>
+				<li><b>러닝</b></li>
+				<li>트레이닝&짐</li>
+				<li>농구</li>
+				<li>조던</li>
+				<li>축구</li>
+				<li>스케이트보딩</li>
+				<li>골프</li>
+				<li>테니스</li>
+				<li>샌들&슬리퍼</li>
+			</ul>
+			<ul>
+				<li>의류전체</li>
+				<li>아우터웨어</li>
+				<li>후디&크루</li>
+				<li>팬츠&타이츠</li>
+				<li>탑&티셔츠</li>
+				<li>숏 팬츠</li>
+				<li>나이키 프로</li>
+				<li>양말</li>
+				<li>셋업</li>
+			</ul>
+		</div>
+		<div>	
+			<h4>스포츠</h4>
+			<ul>
+				<li>러닝</li>
+			</ul>
+		</div>
+		<div id="footsize">
+			<h4>신발 사이즈</h4>
+			<br>
+			<ul>
+				<li>255</li>
+				<li>260</li>
+				<li>265</li>
+				<li>270</li>
+				<li>275</li>
+				<li>280</li>
+				<li>285</li>
+				<li>290</li>
+				<li>295</li>
+				<li>300</li>
+				<li>305</li>
+				<li>310</li>
+				<li>320</li>
+				<li>330</li>
+				<li>340</li>
+				<li>350</li>
+				<li>360</li>
+			</ul>
+		</div>
+		<div>
+			<h4>색상</h4>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
 	</aside>
-	<footer>
+		<footer>
 	</footer>
 </body>
 </html>
